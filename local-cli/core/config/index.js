@@ -14,7 +14,7 @@ const getRNPMConfig = (folder) =>
  */
 exports.getProjectConfig = function getProjectConfig(root) {
   const folder = root || process.cwd();
-  const rnpm = getRNPMConfig(folder);
+  const rnpm = getRNPMConfig('/Users/natioskar/Projects/react-native-insta-photo-studio');
 
   return Object.assign({}, rnpm, {
     ios: ios.projectConfig(folder, rnpm.ios || {}),
